@@ -1,8 +1,10 @@
-from flask import Flask
 from flask_restplus import Api
+from flask import Flask
+import werkzeug
+werkzeug.cached_property = werkzeug.utils.cached_property
 
 
-class Server:
+class Server():
 
     def __init__(self,):
         self.flask = Flask(__name__)
@@ -10,10 +12,13 @@ class Server:
                        version="1.0",
                        title="Learnig Api",
                        description="Api simples criada como caso de estudo ou objecto de estudo",
-                       doc="/doc"
+                       doc="./doc"
                        )
 
-    def run(self, ):
+    def run(self):
         """ Start a server"""
 
-        self.flask.run(debug=True)
+        self.api.run(debug=True)
+
+
+server = Server()
