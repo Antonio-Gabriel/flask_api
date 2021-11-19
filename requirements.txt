@@ -1,5 +1,6 @@
 aniso8601==9.0.1
 attrs==21.2.0
+autopep8==1.6.0
 click==8.0.3
 Flask==2.0.2
 flask-restplus==0.13.0
@@ -8,8 +9,10 @@ itsdangerous==2.0.1
 Jinja2==3.0.3
 jsonschema==4.2.1
 MarkupSafe==2.0.1
+pycodestyle==2.8.0
 pyrsistent==0.18.0
 pytz==2021.3
 six==1.16.0
+toml==0.10.2
 Werkzeug==2.0.2
 zipp==3.6.0
